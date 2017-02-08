@@ -1,0 +1,15 @@
+<%= @course.name %>
+
+<% if @course.professor %>
+  <%= @course.professor %>
+<% else %>
+   There is no professor
+<% end %>
+
+<%= @course.credits %>
+
+<h3>Students enrolled</h3>
+
+<% @course.students.each do |student| %>
+  <%= student.id %>
+<% end %>

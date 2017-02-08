@@ -1,0 +1,6 @@
+<%= @student.name %>
+<% @student.courses.each do |course| %>
+<%= course.name %>
+<% end %>
+
+<%= link_to "<<Back to Students List", students_path %>
